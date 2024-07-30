@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Order Form with Product Selection and Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Form</h1>
+        <form id="orderForm">
+            <label for="productSelect">Select Product:</label>
+            <select id="productSelect" name="productSelect">
+                <option value="0" data-price="0">--Select a product--</option>
+                <option value="1" data-price="999.99">iPad Pro</option>
+                <option value="2" data-price="499.99">iPad Air</option>
+                <option value="3" data-price="599.99">iPad Mini</option>
+            </select>
+
+            <label for="quantityInput">Quantity:</label>
+            <input type="number" id="quantityInput" name="quantityInput" min="1" value="1">
+
+            <div id="totalCost">Total Cost: $0.00</div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
